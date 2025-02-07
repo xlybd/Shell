@@ -1,7 +1,7 @@
 #!/bin/bash
 #author: xili
 #version: v1
-#date: 2025-02-07
+#date: 2023-09-06
 
 suffix=$(date +%Y%m%d)
 
