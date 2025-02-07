@@ -20,6 +20,6 @@ for i in $(seq -w 1 5);do
     #生成15位随机字符串，使用三个特殊字符
     p=$(mkpasswd -l 15 -s 3)
     #添加用户设置密码，并保存到文件
-    useradd "user_{i}" && echo "${p}" | passwd --stdin user_${i}
+    useradd "user_${i}" && echo "${p}" | passwd --stdin user_${i}
     echo "user_${i} ${p}" >> /tmp/userinfo.txt
 done
