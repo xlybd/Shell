@@ -15,7 +15,7 @@ then
         exit 1
     fi
 fi
-
+#获取状态码
 code=$(curl --connect-timeout 3 -I $1 2>/dev/null | grep 'HTTP' | awk '{print $2}')
 
 if echo $code | grep -qE '^2[0-9][0-9]|^3[0-9][0-9]'
